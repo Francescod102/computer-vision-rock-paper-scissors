@@ -27,7 +27,7 @@ def get_winner(computer_choice, user_choice):
     elif computer_choice == "Paper" and user_choice == "Rock":
        return "You Lost"
     elif computer_choice == "Paper" and user_choice == "Paper":
-        return "it's a tie"
+        return "it is a tie"
     
 
 
@@ -36,3 +36,8 @@ computer_choice = get_computer_choice()
 user_choice = get_user_choice()
     
 print (get_winner(computer_choice,  user_choice))
+
+
+def play ():
+    play = (get_computer_choice,get_user_choice,get_winner)
+    

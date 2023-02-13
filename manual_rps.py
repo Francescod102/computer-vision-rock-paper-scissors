@@ -5,7 +5,7 @@ def get_computer_choice():
     computer_choice = choice(list_of_choices)
     return computer_choice
 
-def get_user_choice ():
+def get_user_choice():
     user_choice = input("Enter Rock, Paper or Scissors: ")
     return(user_choice)
 

@@ -16,30 +16,31 @@ def get_winner(computer_choice, user_choice):
             print("it is a tie!")
         elif user_choice=='Paper':
             print("You won! (Paper wraps Rock)") 
-        elif user_choice=='Scissors':
+        else:
+            user_choice=='Scissors'
             print("You lost! ( Rocke blunts Scissors)")
 
         
-    if computer_choice=="Paper":
+        
+        if computer_choice=="Paper":
 
-
-    
-        if user_choice=='Rock': 
-           print ("You lost! (Paper wraps Rock)")
-        elif user_choice=="Paper":
+            if user_choice=='Rock': 
+                print ("You lost! (Paper wraps Rock)")
+            elif user_choice=="Paper":
              print ("it is a tie!") 
-        elif user_choice=="Scissors": 
-            print("You won! (Scissors cut Paper)") 
+            else:
+                user_choice=="Scissors"
+                print("You won! (Scissors cut Paper)") 
 
 
-    if computer_choice=="Scissors":
-
-        if user_choice=='Rock': 
-            print("You won! (Rock blunts Scissors)")
-        elif user_choice=="Paper": 
-            print("You lost! (Scissors cut Paper)")
-        elif user_choice=="Scissors":
-            print ("it is a tie!")
+        
+        if computer_choice=="Scissors":
+            if user_choice=='Rock': 
+                print("You won! (Rock blunts Scissors)")
+            elif user_choice=="Paper": 
+                print("You lost! (Scissors cut Paper)")
+            elif user_choice=="Scissors":
+                print ("it is a tie!")
     
 print()
 

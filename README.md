@@ -6,3 +6,5 @@ The files you are downloading contain the structure and the parameters of a deep
 Later, you will load them into your Python application in the next milestone.<how you went about it>
 --created a githiub repo so i can track my work throuhgout the project <name of repo>
 -- published the changes to github 
+
+# Milestone 4

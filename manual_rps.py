@@ -1,7 +1,8 @@
 from random import choice
 
 def get_computer_choice():
-    return choice(["Rock", "Paper", "Scissors"])
+    list_of_choices = ["Rock", "Paper", "Scissors"]
+    return choice(list_of_choices)
 
 def get_user_choice ():
     user_choice = input("Enter Rock, Paper or Scissors: ")
@@ -33,11 +34,12 @@ def get_winner(computer_choice, user_choice):
 
 
 computer_choice = get_computer_choice()
-user_choice = get_user_choice()
+print (computer_choice)
+# user_choice = get_user_choice()
     
-print (get_winner(computer_choice,  user_choice))
+# print (get_winner(computer_choice,  user_choice))
 
 
-def play ():
-    play = (get_computer_choice,get_user_choice,get_winner)
+# def play ():
+#     play = (get_computer_choice,get_user_choice,get_winner)
     

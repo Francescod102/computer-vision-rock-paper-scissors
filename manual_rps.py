@@ -1,8 +1,8 @@
-from random import choice
+import random
 
 def get_computer_choice():
-    list_of_choices = ["Rock", "Paper", "Scissors"]
-    computer_choice = choice(list_of_choices)
+    move_list = ["Rock", "Paper", "Scissors"]
+    computer_choice = random.choice(move_list)
     return computer_choice
 
 def get_user_choice():

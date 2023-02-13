@@ -31,7 +31,7 @@ def get_user_choice ():
 #     elif computer_choice == "Paper" and user_choice == "Paper":
 #         return "it is a tie"
     
-
+# print()
 
 
 # computer_choice = get_computer_choice()

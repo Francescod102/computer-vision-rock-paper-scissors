@@ -30,7 +30,7 @@ def get_winner(computer_choice, user_choice):
 
 
         
-    else:
+    elif computer_choice=='Scissors':
          
         if user_choice=='Rock': 
             print("You won! (Rock blunts Scissors)")

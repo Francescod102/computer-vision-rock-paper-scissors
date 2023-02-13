@@ -15,21 +15,21 @@ def get_winner(computer_choice, user_choice):
     elif computer_choice == "Rock" and user_choice == "Scissors":
        return "You lost"
     elif computer_choice == "Rock" and user_choice == "Rock":
-        return "it's a tie"
+        return "it is a tie!"
     
     if computer_choice  == 'Scissors' and user_choice == 'Rock':
        return "You won"
     elif computer_choice == "Scissors" and user_choice == "Paper":
        return " You lost"
     elif computer_choice == "Scissors" and user_choice == "Scissors":
-        return "it's a tie"
+        return "it is a tie!"
     
     if computer_choice  == 'Paper' and user_choice == 'Scissors':
        return "You won"
     elif computer_choice == "Paper" and user_choice == "Rock":
        return "You Lost"
     elif computer_choice == "Paper" and user_choice == "Paper":
-        return "it is a tie"
+        return "it is a tie!"
     
 print()
 

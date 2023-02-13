@@ -42,6 +42,6 @@ print (get_winner(computer_choice,  user_choice))
 
 
 def play ():
-    play = (get_computer_choice,get_user_choice,)
+    play = (get_computer_choice,get_user_choice,get_winner)
 
     

@@ -14,7 +14,7 @@ def get_winner(computer_choice,user_choice):
     if computer_choice== user_choice:
         print("it is a tie!")
     elif computer_choice=='Rock' and user_choice=='Paper':
-        print('You won!')  
+        print("You won!")  
     elif computer_choice=='Paper' and user_choice=='Scissor':
         print("You won!")
     elif  computer_choice=="Scissor" and user_choice=='Rock':
@@ -22,35 +22,6 @@ def get_winner(computer_choice,user_choice):
     else:
         print("You lost") 
            
-    
-              
-    # return winner
-
-# computer_win = 0
-# user_win = 0
-
-# while computer_win < 3 and user_win < 3 :
-#     computer_choice = get_computer_choice()
-#     user_choice = get_user_choice()
-
-#     winner = get_winner(computer_choice, user_choice)
-#     if winner == 'computer': 
-#         computer_win +=1
-#     elif winner == "user" :
-#         user_win +=1
-#     print(computer_win,user_win)
-# if computer_win > user_win :
-#     print("computer_win")
-# elif computer_win < user_win :
-#     print('user_win')
-
-# user_continues = input ("Do you want to play ?( y/n)")
-# if user_choice in ['Yes']:
-#     pass
-# elif user_choice in ['No']:
-#     else:
-#     break
-
 computer_choice = get_computer_choice()
 print (computer_choice)
 user_choice = get_user_choice()

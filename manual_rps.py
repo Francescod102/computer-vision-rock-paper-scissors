@@ -65,11 +65,11 @@ def get_winner(computer_choice,user_choice):
 #     else:
 #     break
 
-    computer_choice = get_computer_choice()
-    print (computer_choice)
-    user_choice = get_user_choice()
+computer_choice = get_computer_choice()
+print (computer_choice)
+user_choice = get_user_choice()
 
-    print (get_winner (computer_choice ,user_choice,))
+print (get_winner (computer_choice ,user_choice,))
     
 def play ():
         play = (get_computer_choice,get_user_choice,get_winner)

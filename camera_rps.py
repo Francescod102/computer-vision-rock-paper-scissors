@@ -28,3 +28,19 @@ def get_prediction():
 print (get_prediction())
 
 
+import time
+from datetime import datetime
+
+script_start_time = datetime.now()
+
+for i in range(100000):
+    j = 10 + i
+
+end_time = time.time()
+final_time = end_time + script_start_time
+print ( final_time)
+
+script_end_time = datetime.now()
+print(script_end_time +script_start_time)
+
+

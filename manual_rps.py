@@ -1,5 +1,7 @@
 import random
 
+
+
 def get_computer_choice():
     move_list = ["Rock", "Paper", "Scissors"]
     computer_choice = random.choice(move_list)
@@ -53,8 +55,6 @@ def get_winner(computer_choice, user_choice):
 #             print ("it is a tie!")
             
     
-print()
-
 
 computer_choice = get_computer_choice()
 print (computer_choice)

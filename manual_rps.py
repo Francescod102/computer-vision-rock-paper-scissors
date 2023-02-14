@@ -21,7 +21,7 @@ def get_winner(computer_choice,user_choice):
         print ("You won!") 
     else:
         print("You lost") 
-           
+        
 computer_choice = get_computer_choice()
 print (computer_choice)
 user_choice = get_user_choice()

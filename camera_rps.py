@@ -25,7 +25,7 @@
 #         # Destroy all the windows
 #         cv2.destroyAllWindows()
 
-# print (get_prediction())
+ print (get_prediction())
 
 
 import time

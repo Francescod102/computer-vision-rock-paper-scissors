@@ -71,7 +71,7 @@ def get_winner():
         computer_choice = random.choice(move_list[:3])
         user_choice = get_prediction()
         print("usr =", user_choice, "comp = ", computer_choice)
-        cv2.putText(frame,f"{user_choice}-{computer_choice}",)
+        # cv2.putText(frame,f"{user_choice}-{computer_choice}",)
         totalplay += 1
         if computer_choice == user_choice:
             print("It is a tie")
@@ -96,7 +96,8 @@ def get_winner():
 
         return winner
     
-    task_camera()
+get_winner()
+task_camera()
 
 
 #     elif computer_choice == "Paper":

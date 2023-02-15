@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 
-move_list = ["Rock", "Paper", "Scissors", "Nothing"]
+move_list = ["Rock", "Paper", "Scissors","Nothing"]
 
 def task_camera():
     cap = cv2.VideoCapture(0)
@@ -63,38 +63,38 @@ def get_user_choice():
 
 
 def get_winner():
-    computer_win = 0
-    user_win = 0
-    totalplay = 0
-    while computer_win < 3 and user_win < 3:
+    computer_wins = 0
+    user_wins = 0
+    rounds_played = 0
+    while computer_wins < 3 and user_wins < 3 and rounds_played < 5:
 
         computer_choice = random.choice(move_list[:3])
         user_choice = get_prediction()
         print("usr =", user_choice, "comp = ", computer_choice)
         # cv2.putText(frame,f"{user_choice}-{computer_choice}",)
-        totalplay += 1
+        rounds_played += 1
         if computer_choice == user_choice:
             print("It is a tie")
             winner = "tie"
         elif (computer_choice == "Rock" and user_choice == "Scissors") or (computer_choice == "Paper" and user_choice == "Rock") or (computer_choice == "Paper" and user_choice == "Rock"):
             print("You lost!")
             winner = "compute_choicer"
-            computer_win += 1
+            computer_wins += 1
 
         else:
             print("You lost")
             winner = "user_choice"
-            user_win += 1
+            user_wins += 1
 
         # return winner
-    if computer_win == 3:
+    if computer_wins == 3:
         print("computer_win")
-    elif user_win == 3:
+    elif user_wins == 3:
         print("user_win")
     else:
         print("you lost!")
 
-        return winner
+    return winner 
     
 get_winner()
 task_camera()

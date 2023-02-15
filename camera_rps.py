@@ -1,10 +1,15 @@
+import random
 import cv2
 from keras.models import load_model
 import numpy as np
+import time
+from datetime import datetime
+
+model = load_model("keras_model.h5")
 
 
 def get_prediction():
-    model = load_model("keras_model.h5")
+    
     cap = cv2.VideoCapture(0)
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
@@ -28,27 +33,6 @@ def get_prediction():
 #         cap.release()
 #         # Destroy all the windows
 #         cv2.destroyAllWindows()
-
-print(get_prediction())
-
-
-import time
-from datetime import datetime
-
-script_start_time = datetime.now()
-
-for i in range(100000):
-    j = 10 + i
-
-end_time = time.time()
-final_time = end_time + script_start_time
-print(final_time)
-
-script_end_time = datetime.now()
-print(script_end_time + script_start_time)
-
-
-import random
 
 
 def get_computer_choice():
@@ -109,8 +93,8 @@ def get_winner(computer_choice, user_choice):
 
 computer_win = 0
 user_win = 0
-
-while computer_win < 3 and user_win < 3:
+totalplay = 0
+while computer_win < 3 and user_win < 3 and totalplay <5 :
     computer_choice = get_computer_choice()
     user_choice = get_user_choice()
 
@@ -120,7 +104,13 @@ while computer_win < 3 and user_win < 3:
     elif winner == "user":
         user_win += 1
     print(computer_win, user_win)
+    totalplay += 1
+
+
+
 if computer_win > user_win:
     print("computer_win")
 elif computer_win < user_win:
     print("user_win")
+else:
+    print ("It's a tie !!!")

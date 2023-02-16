@@ -46,9 +46,11 @@ The game should be repeated until either the computer or the user wins three rou
 Feel free to code the logic as you want, but make sure you defined at least two variables to keep track of the score of the computer and the user. Name them computer_wins and user_wins respectively. using while loop capturing and shwoing your image. 
 
 ## Task 5
+## output 
+- screenshots:
 
-Readme.jpg
-Screenshot 2023-02-10 at 09.48.21.png
+![Alt text](Readme.jpg)
+![Alt text](Screenshot%202023-02-16%20at%2010.19.06%20Small.jpeg)
 
 Talk about how you integrated your game with the model, also talk about what more you could have done to improve the functionality of the game.
 Rock-Paper-Scissors is a game in which each player simultaneously shows one of three hand signals representing rock, paper, or scissors. Rock beats scissors. Scissors beats paper. Paper beats rock. The player who shows the first option that beats the other player's option wins. This is an implementation of an interactive Rock-Paper-Scissors game, in which the user can play with the computer using the camera

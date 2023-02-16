@@ -42,3 +42,5 @@ In the previous task, the script reads the input from the camera and then compar
 ## Task 3
 The game should be repeated until either the computer or the user wins three rounds.
 Feel free to code the logic as you want, but make sure you defined at least two variables to keep track of the score of the computer and the user. Name them computer_wins and user_wins respectively.
+
+Readme.jpg

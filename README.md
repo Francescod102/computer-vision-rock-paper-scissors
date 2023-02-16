@@ -3,8 +3,8 @@
 Make sure you push the model and labels to your GitHub repository after committing.
 --explian what you did when you trained the model :from the "Tensorflow" tab in Teachable-Machine. The model should be named keras_model.h5 and the text file containing the labels should be named labels.txt.
 The files you are downloading contain the structure and the parameters of a deep learning model. They are not files that can be run, and they do not contain anything readable if you look inside. 
-Later, you will load them into your Python application in the next milestone.<how you went about it>
---created a githiub repo so i can track my work throuhgout the project <name of repo>
+Later, you will load them into your Python application in the next milestone.use model trasferflow computer and user can play the game through camera.
+--created a githiub repo so i can track my work throuhgout the project computer-vision-rock-paper-scissors.
 -- published the changes to github 
 
 # Milestone 4
@@ -46,6 +46,30 @@ The game should be repeated until either the computer or the user wins three rou
 Feel free to code the logic as you want, but make sure you defined at least two variables to keep track of the score of the computer and the user. Name them computer_wins and user_wins respectively. using while loop capturing and shwoing your image. 
 
 ## Task 5
+
 Readme.jpg
+Screenshot 2023-02-10 at 09.48.21.png
+
 Talk about how you integrated your game with the model, also talk about what more you could have done to improve the functionality of the game.
 Rock-Paper-Scissors is a game in which each player simultaneously shows one of three hand signals representing rock, paper, or scissors. Rock beats scissors. Scissors beats paper. Paper beats rock. The player who shows the first option that beats the other player's option wins. This is an implementation of an interactive Rock-Paper-Scissors game, in which the user can play with the computer using the camera
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

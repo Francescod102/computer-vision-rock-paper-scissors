@@ -28,3 +28,17 @@ All of the code you've programmed so far relates to one thing: running the game 
 Create and call a new function called play.
 Inside the function you will call all the other three functions you've created (get_computer_choice, get_user_choice, and get_winner)
 Now when you run the code, it should play a game of Rock-Paper-Scissors, and it should print whether the computer or you won.
+
+
+# Milestone 5
+## Task 1
+Replace the hard-coded user guess with the output of the computer vision model. Create a new file called camera_rps.py where you will write the new code.
+Create a new function called get_prediction that will return the output of the model you used earlier.
+Remember that the output of the model you downloaded is a list of probabilities for each class. You need to pick the class with the highest probability. So, for example, assuming you trained the model in this order: "Rock", "Paper", "Scissors", and "Nothing", if the first element of the list is 0.8, the second element is 0.1, the third element is 0.05, and the fourth element is 0.05, then, the model predicts that you showed "Rock" to the camera with a confidence of 0.8.
+
+## Task 2
+In the previous task, the script reads the input from the camera and then compares it with the computer's choice without stopping. However, when you play a regular game, you usually count down to zero, and at that point you show your hand.
+
+## Task 3
+The game should be repeated until either the computer or the user wins three rounds.
+Feel free to code the logic as you want, but make sure you defined at least two variables to keep track of the score of the computer and the user. Name them computer_wins and user_wins respectively.
